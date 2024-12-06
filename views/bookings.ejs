@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bookings.css">
+
+
+</head>
+
+<body>
+    <div><%- include('./partials/header') %></div>
+
+    <h1>bookings</h1>
+    <div id="container">
+        <% bookingDetails.forEach((details)=>{%>
+            <div id="serviceDetails" class="bookings">
+                <h4>
+                    <%=details.name %>
+                </h4>
+                <h4>
+                    <%=details.viechle %>
+                </h4>
+                <h4>
+                    <%=details.service %>
+                </h4>
+                <h4>
+                    <%=details.contact %>
+                </h4>
+                <form action="/home/bookings/edit/<%=  details.name %>" method="get">
+                    <button class="butn">Edit</button>
+                </form>
+                <form action="/home/bookings/delete/<%= details._id %>" method="post" >
+                    <button class="butn">Delete</button>
+                </form>
+            </div>
+            <%});%>
+    </div>
+
+</body>
+
+</html>

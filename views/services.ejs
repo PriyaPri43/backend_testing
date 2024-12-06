@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <link rel="stylesheet" href="service.css">
+</head>
+
+<body>
+    <div>
+        <div><%- include('./partials/header') %></div>
+        <div>
+            <h1>SERVICE DETAILS</h1>
+            <div id="container">
+                <% serviceDetails.forEach((details)=>{%>
+                    <div id="serviceDetails">
+                        <img src="<%=details.image %>" alt="not found" height="200px" width="300px">
+                        <h4><%=details.service %></h4>
+                        <h4><%=details.description %></h4>
+                    </div>
+                <%});%>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

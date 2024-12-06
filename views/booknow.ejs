@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book now</title>
+    <link rel="stylesheet" href="booknow.css">
+</head>
+
+<body>
+    <div>
+        <div><%- include('./partials/header') %></div>
+        <center>
+        <div id="myform">
+            <form action="/home/bookings" method="post">
+                <label>Name :</label><input type="text" name="name"><br>
+                <label>Viechle :</label><input type="text" name="vehicle"><br>
+                <label>Service :</label>
+                <select name="service" id="select">
+                    <% serviceDetails.forEach((details)=>{%>
+                        <option>
+                            <%=details.service %>
+                        </option>
+                        <%});%>
+                </select><br>
+                <label>Cantact :</label><input type="number" name="contact" id="number"><br>
+                <button type="submit">Book</button>
+            </form>
+        </div>
+    </center>
+    </div>
+</body>
+
+</html>

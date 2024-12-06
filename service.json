@@ -1,0 +1,25 @@
+[
+    {
+        "service": "oil change",
+        "description": "Your old oil will be drained and new oil will be replaced",
+        "image":"oil.jpg"
+    },
+    {
+        "service": "genral service",
+        "description": "we give normal genral service..giving a genrea check up is always good!",
+        "image":"genral service.jpg"
+
+    },
+    {
+        "service": "water wash",
+        "description": "compleate water wash and your vehicle will be glowing!!!",
+        "image":"water wash.jpg"
+
+    },
+    {
+        "service": "paint",
+        "description": "colourful painting to your car",
+        "image":"painting.png"
+
+    }
+]

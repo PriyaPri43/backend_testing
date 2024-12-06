@@ -1,0 +1,39 @@
+body{
+    background-image:linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url(./genral\ service.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+    text-shadow:2px 2px 2px gray;
+    margin: 10px;
+}
+h1{
+    color: pink;
+    text-shadow:2px 2px 2px pink;
+    letter-spacing: 10px;
+    margin: 10px;
+}
+#con{
+    text-align: center;
+    text-align: justify;
+    margin-top: 20vh;
+    filter: drop-shadow(4px 4px 5px rgb(252, 163, 90));
+    border: 1px solid yellow;
+    /* box-shadow: 4px 4px 4px gray; */
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent; 
+    padding: 20px;
+    background-color: rgb(245, 174, 81,0.2);
+}
+@media screen and (max-width:990px) {
+    #con{
+        flex-direction: column;
+        text-align: center;
+    }
+}

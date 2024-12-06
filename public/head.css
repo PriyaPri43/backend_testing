@@ -1,0 +1,18 @@
+.nav-link{
+    color: white;
+    border-radius: 10px;
+    margin: 10px;
+}
+.nav-link:hover{
+    background-color: #f2AA4CFF;
+    color: black;
+}
+nav{
+    background-color: #101820FF;
+    /* filter: drop-shadow(4px 4px 5px rgb(48, 48, 47)); */
+
+
+}
+.off{
+    background-color: #101820FF;
+}

@@ -1,0 +1,57 @@
+body {
+    background-image: url(./aply.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+form{
+    /* height: 300px; */
+    padding: 20px;
+    width: 400px;
+    border: 1px solid black;
+    box-shadow: 7px 7px 10px black;
+    text-align: center;
+    margin-top: 20vh;
+    background-color: white;
+}
+label{
+    margin: 10px;
+}
+#btn{
+    background-color: white;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid purple;
+    border-radius: 10px;
+    box-shadow: inset 7px 7px 10px purple;
+    cursor: pointer;
+}
+#btn:hover{
+    box-shadow: inset -7px -7px 10px purple;
+
+}
+input[type="text"],#mail,#pass{
+    border: none;
+    border-bottom: 1px solid purple;
+    margin: 10px;
+    padding: 10px;
+    outline: none;
+}
+#file{
+    margin-left: 70px;
+}
+@media screen and (max-width:990px) {
+    form{
+        margin-top: 100px;
+    }    
+}
+
+#sus{
+    margin-top: 15%;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+    width: 50%;
+    background-color: wheat;
+}
