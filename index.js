@@ -1,9 +1,11 @@
 const express=require('express');
 const app=express();
 const mongoose=require('mongoose');
+require('dotenv').config();
+
 const PORT= process.env.PORT || 5000;
 const MONGO_URL = process.env.MONGO_URL;
-require('dotenv').config();
+
 
 async function run(){
     try {
