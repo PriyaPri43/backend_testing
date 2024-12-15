@@ -2,12 +2,13 @@ const express=require('express');
 const app=express();
 const mongoose=require('mongoose');
 const PORT= process.env.PORT || 5000;
-const MONGO = process.env.MONGODB_URL;
+const MONGO_URL = process.env.MONGO_URL;
+require('dotenv').config();
 
 async function run(){
     try {
         // Connect to MongoDB
-        await mongoose.connect(MONGO, {
+        await mongoose.connect(MONGO_URL, {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         });
