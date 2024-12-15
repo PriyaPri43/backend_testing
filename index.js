@@ -2,11 +2,22 @@ const express=require('express');
 const app=express();
 const mongoose=require('mongoose');
 const PORT= process.env.PORT || 5000;
+const MONGO = process.env.MONGODB_URL;
 
 async function run(){
-    await mongoose.connect('mongodb://127.0.0.1:27017/ServiceCenter') ;
-    console.log("connected");
+    try {
+        // Connect to MongoDB
+        await mongoose.connect(MONGO, {
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+        });
+        console.log("MongoDB connected...");
+    } catch (err) {
+        console.error("Error connecting to MongoDB:", err);
+
+    }
 }
+
 run();
 
 app.set('view engine','ejs');
