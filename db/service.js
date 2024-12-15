@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const fs = require('fs');
+// const fs = require('fs');
 
 const Schema = new mongoose.Schema({
     service: {
@@ -10,7 +10,7 @@ const Schema = new mongoose.Schema({
     image:String
 })
 
-let Service= mongoose.model('service', Schema);
+module.exports = mongoose.model('service', Schema);
 
 // let insertData= async ()=>{
 //     const data = JSON.parse(fs.readFileSync('service.json', 'utf8')); 
@@ -19,4 +19,3 @@ let Service= mongoose.model('service', Schema);
 // } 
 // insertData();
 
-module.exports=Service;
