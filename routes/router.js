@@ -22,10 +22,10 @@ router.post('/',async (req,res)=>{                             //after login ren
     res.render('home');
 })
 
-// router.get('/',(req,res)=>{                                    //home butten click 
-//     res.render('home');
+router.get('/',(req,res)=>{                                    //home butten click 
+    res.render('home');
 
-// })
+})
 
 
 router.get('/service',async (req,res)=>{                    //service details from mongodb using mongoose
